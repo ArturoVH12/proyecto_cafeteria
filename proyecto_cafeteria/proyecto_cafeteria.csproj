@@ -58,6 +58,36 @@
     <Compile Include="interfaz_principal\interfaz.Designer.cs">
       <DependentUpon>interfaz.cs</DependentUpon>
     </Compile>
+    <Compile Include="interfaz_principal\UserAyuda.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="interfaz_principal\UserAyuda.Designer.cs">
+      <DependentUpon>UserAyuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="interfaz_principal\UserCategoria.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="interfaz_principal\UserCategoria.Designer.cs">
+      <DependentUpon>UserCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="interfaz_principal\UserInventario.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="interfaz_principal\UserInventario.Designer.cs">
+      <DependentUpon>UserInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="interfaz_principal\UserPedidos.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="interfaz_principal\UserPedidos.Designer.cs">
+      <DependentUpon>UserPedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="interfaz_principal\UserPerfil.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="interfaz_principal\UserPerfil.Designer.cs">
+      <DependentUpon>UserPerfil.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="recuperar_contraseña\Recuperacion.cs">
@@ -71,6 +101,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="interfaz_principal\interfaz.resx">
       <DependentUpon>interfaz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="interfaz_principal\UserAyuda.resx">
+      <DependentUpon>UserAyuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="interfaz_principal\UserCategoria.resx">
+      <DependentUpon>UserCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="interfaz_principal\UserInventario.resx">
+      <DependentUpon>UserInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="interfaz_principal\UserPedidos.resx">
+      <DependentUpon>UserPedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="interfaz_principal\UserPerfil.resx">
+      <DependentUpon>UserPerfil.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
