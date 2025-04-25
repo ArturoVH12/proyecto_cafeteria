@@ -10,19 +10,11 @@ using System.Windows.Forms;
 
 namespace proyecto_cafeteria.interfaz_principal
 {
-    public partial class UserCategoria : UserControl
-
+    public partial class UserBedidas : UserControl
     {
-       
-        public UserCategoria()
+        public UserBedidas()
         {
             InitializeComponent();
-          
-            
         }
-
-      
-
-      
     }
 }

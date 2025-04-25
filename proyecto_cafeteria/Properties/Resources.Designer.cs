@@ -163,6 +163,16 @@ namespace proyecto_cafeteria.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ventas {
+            get {
+                object obj = ResourceManager.GetObject("ventas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap WhatsApp_Image_2025_04_15_at_6_09_09_PM_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("WhatsApp_Image_2025-04-15_at_6.09.09_PM-removebg-preview", resourceCulture);

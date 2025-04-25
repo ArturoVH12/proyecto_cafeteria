@@ -32,14 +32,14 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.btn_ingresar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtContraseña = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -89,15 +89,26 @@
             this.panel2.Controls.Add(this.linkLabel1);
             this.panel2.Controls.Add(this.btn_ingresar);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.txtContraseña);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.txtUsuario);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(486, 3);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(477, 558);
             this.panel2.TabIndex = 1;
+            // 
+            // linkLabel2
+            // 
+            this.linkLabel2.AutoSize = true;
+            this.linkLabel2.Location = new System.Drawing.Point(89, 479);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(188, 20);
+            this.linkLabel2.TabIndex = 15;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "Olvidaste tu Contraseña?";
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // linkLabel1
             // 
@@ -126,13 +137,13 @@
             this.label3.Size = new System.Drawing.Size(0, 20);
             this.label3.TabIndex = 12;
             // 
-            // textBox2
+            // txtContraseña
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(41, 276);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(267, 30);
-            this.textBox2.TabIndex = 11;
+            this.txtContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContraseña.Location = new System.Drawing.Point(41, 276);
+            this.txtContraseña.Name = "txtContraseña";
+            this.txtContraseña.Size = new System.Drawing.Size(267, 30);
+            this.txtContraseña.TabIndex = 11;
             // 
             // label2
             // 
@@ -144,13 +155,13 @@
             this.label2.TabIndex = 10;
             this.label2.Text = "Contraseña";
             // 
-            // textBox1
+            // txtUsuario
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(41, 120);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(267, 30);
-            this.textBox1.TabIndex = 9;
+            this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuario.Location = new System.Drawing.Point(41, 120);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(267, 30);
+            this.txtUsuario.TabIndex = 9;
             // 
             // label1
             // 
@@ -161,17 +172,6 @@
             this.label1.Size = new System.Drawing.Size(96, 29);
             this.label1.TabIndex = 8;
             this.label1.Text = "Usuario";
-            // 
-            // linkLabel2
-            // 
-            this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(89, 479);
-            this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(188, 20);
-            this.linkLabel2.TabIndex = 15;
-            this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "Olvidaste tu Contraseña?";
-            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // Form1
             // 
@@ -200,9 +200,9 @@
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Button btn_ingresar;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtContraseña;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.LinkLabel linkLabel2;
     }

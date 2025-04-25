@@ -52,6 +52,42 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="interfaz de administrador\principal_admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="interfaz de administrador\principal_admin.Designer.cs">
+      <DependentUpon>principal_admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="interfaz de administrador\UserAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="interfaz de administrador\UserAdmin.Designer.cs">
+      <DependentUpon>UserAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="interfaz de administrador\UserCategoria2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="interfaz de administrador\UserCategoria2.Designer.cs">
+      <DependentUpon>UserCategoria2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="interfaz de administrador\UserInventario2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="interfaz de administrador\UserInventario2.Designer.cs">
+      <DependentUpon>UserInventario2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="interfaz de administrador\UserPedidos2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="interfaz de administrador\UserPedidos2.Designer.cs">
+      <DependentUpon>UserPedidos2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="interfaz de administrador\UserVentas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="interfaz de administrador\UserVentas.Designer.cs">
+      <DependentUpon>UserVentas.cs</DependentUpon>
+    </Compile>
     <Compile Include="interfaz_principal\interfaz.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +99,12 @@
     </Compile>
     <Compile Include="interfaz_principal\UserAyuda.Designer.cs">
       <DependentUpon>UserAyuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="interfaz_principal\UserBedidas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="interfaz_principal\UserBedidas.Designer.cs">
+      <DependentUpon>UserBedidas.cs</DependentUpon>
     </Compile>
     <Compile Include="interfaz_principal\UserCategoria.cs">
       <SubType>UserControl</SubType>
@@ -99,11 +141,32 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="interfaz de administrador\principal_admin.resx">
+      <DependentUpon>principal_admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="interfaz de administrador\UserAdmin.resx">
+      <DependentUpon>UserAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="interfaz de administrador\UserCategoria2.resx">
+      <DependentUpon>UserCategoria2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="interfaz de administrador\UserInventario2.resx">
+      <DependentUpon>UserInventario2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="interfaz de administrador\UserPedidos2.resx">
+      <DependentUpon>UserPedidos2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="interfaz de administrador\UserVentas.resx">
+      <DependentUpon>UserVentas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="interfaz_principal\interfaz.resx">
       <DependentUpon>interfaz.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="interfaz_principal\UserAyuda.resx">
       <DependentUpon>UserAyuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="interfaz_principal\UserBedidas.resx">
+      <DependentUpon>UserBedidas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="interfaz_principal\UserCategoria.resx">
       <DependentUpon>UserCategoria.cs</DependentUpon>
@@ -178,6 +241,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bebidas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ventas.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

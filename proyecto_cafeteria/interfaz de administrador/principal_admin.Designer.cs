@@ -1,6 +1,6 @@
-﻿namespace proyecto_cafeteria.interfaz_principal
+﻿namespace proyecto_cafeteria.interfaz_de_administrador
 {
-    partial class interfaz
+    partial class principal_admin
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_ventas = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btn_ayuda = new System.Windows.Forms.Button();
             this.btn_salir = new System.Windows.Forms.Button();
@@ -39,10 +40,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel_contenedor = new System.Windows.Forms.Panel();
             this.userAyuda1 = new proyecto_cafeteria.interfaz_principal.UserAyuda();
-            this.userInventario1 = new proyecto_cafeteria.interfaz_principal.UserInventario();
-            this.userPedidos1 = new proyecto_cafeteria.interfaz_principal.UserPedidos();
-            this.userPerfil1 = new proyecto_cafeteria.interfaz_principal.UserPerfil();
-            this.userCategoria1 = new proyecto_cafeteria.interfaz_principal.UserCategoria();
+            this.userVentas1 = new proyecto_cafeteria.interfaz_de_administrador.UserVentas();
+            this.userInventario21 = new proyecto_cafeteria.interfaz_de_administrador.UserInventario2();
+            this.userPedidos21 = new proyecto_cafeteria.interfaz_de_administrador.UserPedidos2();
+            this.userCategoria21 = new proyecto_cafeteria.interfaz_de_administrador.UserCategoria2();
+            this.userAdmin1 = new proyecto_cafeteria.interfaz_de_administrador.UserAdmin();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel_contenedor.SuspendLayout();
@@ -51,6 +53,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.PapayaWhip;
+            this.panel1.Controls.Add(this.btn_ventas);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.btn_ayuda);
             this.panel1.Controls.Add(this.btn_salir);
@@ -63,7 +66,24 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(210, 602);
-            this.panel1.TabIndex = 0;
+            this.panel1.TabIndex = 1;
+            // 
+            // btn_ventas
+            // 
+            this.btn_ventas.FlatAppearance.BorderSize = 0;
+            this.btn_ventas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ventas.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ventas.ForeColor = System.Drawing.Color.Black;
+            this.btn_ventas.Image = global::proyecto_cafeteria.Properties.Resources.ventas;
+            this.btn_ventas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_ventas.Location = new System.Drawing.Point(12, 420);
+            this.btn_ventas.Name = "btn_ventas";
+            this.btn_ventas.Size = new System.Drawing.Size(198, 54);
+            this.btn_ventas.TabIndex = 8;
+            this.btn_ventas.Text = "   Ventas";
+            this.btn_ventas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_ventas.UseVisualStyleBackColor = true;
+            this.btn_ventas.Click += new System.EventHandler(this.btn_ventas_Click);
             // 
             // panel3
             // 
@@ -82,7 +102,7 @@
             this.btn_ayuda.ForeColor = System.Drawing.Color.Black;
             this.btn_ayuda.Image = global::proyecto_cafeteria.Properties.Resources.boton_web_de_ayuda;
             this.btn_ayuda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_ayuda.Location = new System.Drawing.Point(12, 512);
+            this.btn_ayuda.Location = new System.Drawing.Point(12, 535);
             this.btn_ayuda.Name = "btn_ayuda";
             this.btn_ayuda.Size = new System.Drawing.Size(198, 54);
             this.btn_ayuda.TabIndex = 6;
@@ -99,7 +119,7 @@
             this.btn_salir.ForeColor = System.Drawing.Color.Black;
             this.btn_salir.Image = global::proyecto_cafeteria.Properties.Resources.cerrar_sesion;
             this.btn_salir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_salir.Location = new System.Drawing.Point(12, 435);
+            this.btn_salir.Location = new System.Drawing.Point(12, 479);
             this.btn_salir.Name = "btn_salir";
             this.btn_salir.Size = new System.Drawing.Size(198, 54);
             this.btn_salir.TabIndex = 5;
@@ -190,57 +210,62 @@
             // 
             this.panel_contenedor.BackColor = System.Drawing.Color.DarkGoldenrod;
             this.panel_contenedor.Controls.Add(this.userAyuda1);
-            this.panel_contenedor.Controls.Add(this.userInventario1);
-            this.panel_contenedor.Controls.Add(this.userPedidos1);
-            this.panel_contenedor.Controls.Add(this.userPerfil1);
-            this.panel_contenedor.Controls.Add(this.userCategoria1);
+            this.panel_contenedor.Controls.Add(this.userVentas1);
+            this.panel_contenedor.Controls.Add(this.userInventario21);
+            this.panel_contenedor.Controls.Add(this.userPedidos21);
+            this.panel_contenedor.Controls.Add(this.userCategoria21);
+            this.panel_contenedor.Controls.Add(this.userAdmin1);
             this.panel_contenedor.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel_contenedor.Location = new System.Drawing.Point(210, 0);
             this.panel_contenedor.Name = "panel_contenedor";
             this.panel_contenedor.Size = new System.Drawing.Size(741, 599);
-            this.panel_contenedor.TabIndex = 1;
+            this.panel_contenedor.TabIndex = 2;
             // 
             // userAyuda1
             // 
             this.userAyuda1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.userAyuda1.Location = new System.Drawing.Point(115, 46);
+            this.userAyuda1.Location = new System.Drawing.Point(89, 43);
             this.userAyuda1.Name = "userAyuda1";
-            this.userAyuda1.Size = new System.Drawing.Size(566, 454);
+            this.userAyuda1.Size = new System.Drawing.Size(540, 347);
             this.userAyuda1.TabIndex = 5;
             // 
-            // userInventario1
+            // userVentas1
             // 
-            this.userInventario1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.userInventario1.Location = new System.Drawing.Point(115, 46);
-            this.userInventario1.Name = "userInventario1";
-            this.userInventario1.Size = new System.Drawing.Size(566, 454);
-            this.userInventario1.TabIndex = 4;
+            this.userVentas1.Location = new System.Drawing.Point(97, 32);
+            this.userVentas1.Name = "userVentas1";
+            this.userVentas1.Size = new System.Drawing.Size(501, 490);
+            this.userVentas1.TabIndex = 4;
             // 
-            // userPedidos1
+            // userInventario21
             // 
-            this.userPedidos1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.userPedidos1.Location = new System.Drawing.Point(115, 46);
-            this.userPedidos1.Name = "userPedidos1";
-            this.userPedidos1.Size = new System.Drawing.Size(566, 454);
-            this.userPedidos1.TabIndex = 3;
+            this.userInventario21.Location = new System.Drawing.Point(50, 65);
+            this.userInventario21.Name = "userInventario21";
+            this.userInventario21.Size = new System.Drawing.Size(560, 402);
+            this.userInventario21.TabIndex = 3;
             // 
-            // userPerfil1
+            // userPedidos21
             // 
-            this.userPerfil1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.userPerfil1.Location = new System.Drawing.Point(115, 46);
-            this.userPerfil1.Name = "userPerfil1";
-            this.userPerfil1.Size = new System.Drawing.Size(566, 443);
-            this.userPerfil1.TabIndex = 2;
+            this.userPedidos21.Location = new System.Drawing.Point(50, 33);
+            this.userPedidos21.Name = "userPedidos21";
+            this.userPedidos21.Size = new System.Drawing.Size(579, 519);
+            this.userPedidos21.TabIndex = 2;
             // 
-            // userCategoria1
+            // userCategoria21
             // 
-            this.userCategoria1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.userCategoria1.Location = new System.Drawing.Point(115, 46);
-            this.userCategoria1.Name = "userCategoria1";
-            this.userCategoria1.Size = new System.Drawing.Size(566, 443);
-            this.userCategoria1.TabIndex = 1;
+            this.userCategoria21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.userCategoria21.Location = new System.Drawing.Point(50, 33);
+            this.userCategoria21.Name = "userCategoria21";
+            this.userCategoria21.Size = new System.Drawing.Size(579, 506);
+            this.userCategoria21.TabIndex = 1;
             // 
-            // interfaz
+            // userAdmin1
+            // 
+            this.userAdmin1.Location = new System.Drawing.Point(72, 33);
+            this.userAdmin1.Name = "userAdmin1";
+            this.userAdmin1.Size = new System.Drawing.Size(538, 506);
+            this.userAdmin1.TabIndex = 0;
+            // 
+            // principal_admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -248,8 +273,8 @@
             this.Controls.Add(this.panel_contenedor);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "interfaz";
-            this.Text = "interfaz";
+            this.Name = "principal_admin";
+            this.Text = "principal_admin";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel_contenedor.ResumeLayout(false);
@@ -260,20 +285,21 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel_contenedor;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btn_perfil;
-        private System.Windows.Forms.Button btn_cat;
+        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btn_ayuda;
         private System.Windows.Forms.Button btn_salir;
         private System.Windows.Forms.Button btn_inventario;
         private System.Windows.Forms.Button btn_pedidos;
-       
-        private System.Windows.Forms.Panel panel3;
-        private UserCategoria userCategoria1;
-        private UserPerfil userPerfil1;
-        private UserPedidos userPedidos1;
-        private UserInventario userInventario1;
-        private UserAyuda userAyuda1;
+        private System.Windows.Forms.Button btn_cat;
+        private System.Windows.Forms.Button btn_perfil;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel_contenedor;
+        private UserAdmin userAdmin1;
+        private UserCategoria2 userCategoria21;
+        private UserPedidos2 userPedidos21;
+        private UserInventario2 userInventario21;
+        private System.Windows.Forms.Button btn_ventas;
+        private UserVentas userVentas1;
+        private interfaz_principal.UserAyuda userAyuda1;
     }
 }

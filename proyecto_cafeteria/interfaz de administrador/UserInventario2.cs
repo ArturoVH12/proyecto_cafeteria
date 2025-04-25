@@ -8,21 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace proyecto_cafeteria.interfaz_principal
+namespace proyecto_cafeteria.interfaz_de_administrador
 {
-    public partial class UserCategoria : UserControl
-
+    public partial class UserInventario2 : UserControl
     {
-       
-        public UserCategoria()
+        public UserInventario2()
         {
             InitializeComponent();
-          
-            
         }
-
-      
-
-      
     }
 }

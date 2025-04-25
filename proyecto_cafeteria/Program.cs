@@ -1,4 +1,5 @@
-﻿using proyecto_cafeteria.interfaz_principal;
+﻿using proyecto_cafeteria.interfaz_de_administrador;
+using proyecto_cafeteria.interfaz_principal;
 using System;
 using System.Collections.Generic;
 using System.Linq;

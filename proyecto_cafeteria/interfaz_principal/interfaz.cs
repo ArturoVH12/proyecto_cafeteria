@@ -13,9 +13,11 @@ namespace proyecto_cafeteria.interfaz_principal
 {
     public partial class interfaz : Form
     {
+
+        
         // 1. Declara los UserControls (asegúrate de usar los nombres correctos)
-        private UserPerfil UserPerfil = new UserPerfil(); // Reemplaza con tu UserControl real
-        private UserCategoria UserCategoria = new UserCategoria(); // Reemplaza con tu UserControl real
+        private UserPerfil UserPerfil = new UserPerfil(); 
+        private UserCategoria UserCategoria = new UserCategoria(); 
         private UserPedidos UserPedidos = new UserPedidos();
         private UserInventario userInventario = new UserInventario();
         private UserAyuda userAyuda = new UserAyuda();
